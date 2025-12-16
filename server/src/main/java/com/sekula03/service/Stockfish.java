@@ -23,7 +23,7 @@ public class Stockfish extends Service{
     }
 
     public Stockfish(Service service) throws IOException {
-        stockfishProcess = new ProcessBuilder("./stockfish-windows-x86-64-avx2.exe").start();
+        stockfishProcess = new ProcessBuilder("./stockfish.exe").start();
         setStreams(stockfishProcess.getInputStream(), stockfishProcess.getOutputStream());
         this.service = service;
         super.sendMsg("uci");
