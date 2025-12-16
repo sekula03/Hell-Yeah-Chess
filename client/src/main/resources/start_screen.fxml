@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sekula03.StartScreenController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="600.0">
+         <image>
+            <Image url="@start_screen/background.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="60.0" layoutY="439.0" mnemonicParsing="false" onAction="#playMultiplayer" prefHeight="50.0" prefWidth="200.0" text="MULTIPLAYER">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="340.0" layoutY="439.0" mnemonicParsing="false" onAction="#playSingleplayer" prefHeight="50.0" prefWidth="200.0" text="PLAY BOT">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="online_label" layoutX="140.0" layoutY="485.0" prefHeight="40.0" prefWidth="70.0" text="0 online">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="340.0" layoutY="485.0" prefHeight="40.0" prefWidth="200.0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="120.0" layoutY="500.0">
+         <image>
+            <Image url="@start_screen/green-circle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="100.0" layoutY="28.0">
+         <image>
+            <Image url="@start_screen/hell_yeah_chess.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
